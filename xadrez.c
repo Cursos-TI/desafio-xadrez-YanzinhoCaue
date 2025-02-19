@@ -9,7 +9,7 @@ int main() {
     int escolha;
 
     // Escolha de direção
-    int direcao;
+    char direcao;
 
     // Movimentação das peças
     int jogada;
@@ -59,38 +59,39 @@ int main() {
             printf("R. Diagonal Direita Traseira...\n");
             printf("E. Diagonal Esquerda...\n");
             printf("T. Diagonal Esquerda Traseira...\n");
+            scanf(" %c", &direcao);
 
             switch (direcao)
             {
             case 'D':
             case 'd':
                 // Loop de movimentação
-                for (int i = 0; i < jogada; i++) {
-                    printf("%dº movimento da peça Bispo para a Diagonal Direita...\n", jogada);
+                for (int i = 1; i <= jogada; i++) {
+                    printf("%d movimento da peça Bispo para a Diagonal Direita...\n", i);
                 }
                 break;
             
             case 'R':
             case 'r':
                 // Loop de movimentação
-                for (int i = 0; i < jogada; i++) {
-                    printf("%dº movimento da peça Bispo para a Diagonal Direita Traseira...\n", jogada);
+                for (int i = 1; i <= jogada; i++) {
+                    printf("%d movimento da peça Bispo para a Diagonal Direita Traseira...\n", i);
                 }
                 break;
 
             case 'E':
             case 'e':
                 // Loop de movimentação
-                for (int i = 0; i < jogada; i++) {
-                    printf("%dº movimento da peça Bispo para a Diagonal Esquerda...\n", jogada);
+                for (int i = 1; i <= jogada; i++) {
+                    printf("%d movimento da peça Bispo para a Diagonal Esquerda...\n", i);
                 }
             break;
 
             case 'T':
-            case 'f':
+            case 't':
                 // Loop de movimentação
-                for (int i = 0; i < jogada; i++) {
-                    printf("%dº movimento da peça Bispo para a Diagonal Esquerda Traseira...\n", jogada);
+                for (int i = 1; i <= jogada; i++) {
+                    printf("%d movimento da peça Bispo para a Diagonal Esquerda Traseira...\n", i);
                 }
             break;
             default:
@@ -109,7 +110,7 @@ int main() {
             // Tratamento para jogada errada
             if(jogada == 0 || jogada > 7) {
                 printf("Jogada incorreta...\n");
-                printf("Digite um número de 1 a 7 para mover o bispo:\n");
+                printf("Digite um número de 1 a 8 para mover a torre:\n");
                 scanf("%d", &jogada);
             } else {
                 printf("Carregando Jogada...\n");
@@ -121,38 +122,39 @@ int main() {
             printf("E. Diagonal Esquerda...\n");
             printf("T. Traseira...\n");
             printf("F. Frente...\n");
+            scanf(" %c", &direcao);
 
             switch (direcao)
             {
             case 'D':
             case 'd':
                 // Loop de movimentação
-                for (int i = 0; i < jogada; i++) {
-                    printf("%dº movimento da peça Torre para a Direita...\n", jogada);
+                for (int i = 1; i <= jogada; i++) {
+                    printf("%d movimento da peça Torre para a Direita...\n", i);
                 }
                 break;
             
             case 'E':
             case 'e':
                 // Loop de movimentação
-                for (int i = 0; i < jogada; i++) {
-                    printf("%dº movimento da peça Torre para a Esquerda...\n", jogada);
+                for (int i = 1; i <= jogada; i++) {
+                    printf("%d movimento da peça Torre para a Esquerda...\n", i);
                 }
                 break;
 
             case 'T':
             case 't':
                 // Loop de movimentação
-                for (int i = 0; i < jogada; i++) {
-                    printf("%dº movimento da peça Torre para a Traseira...\n", jogada);
+                for (int i = 1; i <= jogada; i++) {
+                    printf("%d movimento da peça Torre para a Traseira...\n", i);
                 }
             break;
 
             case 'F':
             case 'f':
                 // Loop de movimentação
-                for (int i = 0; i < jogada; i++) {
-                    printf("%dº movimento da peça Torre para a Frente\n", jogada);
+                for (int i = 1; i <= jogada; i++) {
+                    printf("%d movimento da peça Torre para a Frente\n", i);
                 }
             break;
             default:
@@ -171,7 +173,7 @@ int main() {
             // Tratamento para jogada errada
             if(jogada == 0 || jogada > 7) {
                 printf("Jogada incorreta...\n");
-                printf("Digite um número de 1 a 7 para mover o bispo:\n");
+                printf("Digite um número de 1 a 8 para mover a rainha:\n");
                 scanf("%d", &jogada);
             } else {
                 printf("Carregando Jogada...\n");
@@ -187,70 +189,71 @@ int main() {
             printf("N. Diagonal Esquerda Frontal...\n");
             printf("T. Traseira...\n");
             printf("F. Frente...\n");
+            scanf(" %c", &direcao);
 
             switch (direcao)
             {
             case 'D':
             case 'd':
                 // Loop de movimentação
-                for (int i = 0; i < jogada; i++) {
-                    printf("%dº movimento da peça Rainha para a Direita...\n", jogada);
+                for (int i = 1; i <= jogada; i++) {
+                    printf("%d movimento da peça Rainha para a Direita...\n", i);
                 }
                 break;
             
             case 'E':
             case 'e':
                 // Loop de movimentação
-                for (int i = 0; i < jogada; i++) {
-                    printf("%dº movimento da peça Rainha para a Esquerda...\n", jogada);
+                for (int i = 1; i <= jogada; i++) {
+                    printf("%d movimento da peça Rainha para a Esquerda...\n", i);
                 }
                 break;
 
             case 'C':
             case 'c':
                 // Loop de movimentação
-                for (int i = 0; i < jogada; i++) {
-                    printf("%dº movimento da peça Rainha para a Diagonal Direita Traseira...\n", jogada);
+                for (int i = 1; i <= jogada; i++) {
+                    printf("%d movimento da peça Rainha para a Diagonal Direita Traseira...\n", i);
                 }
                 break;
 
             case 'V':
             case 'v':
                 // Loop de movimentação
-                for (int i = 0; i < jogada; i++) {
-                    printf("%dº movimento da peça Rainha para a Esquerda Traseira...\n", jogada);
+                for (int i = 1; i <= jogada; i++) {
+                    printf("%d movimento da peça Rainha para a Esquerda Traseira...\n", i);
                 }
                 break;
 
             case 'B':
             case 'b':
                 // Loop de movimentação
-                for (int i = 0; i < jogada; i++) {
-                    printf("%dº movimento da peça Rainha para a Diagonal Direita Frontal...\n", jogada);
+                for (int i = 1; i <= jogada; i++) {
+                    printf("%d movimento da peça Rainha para a Diagonal Direita Frontal...\n", i);
                 }
                 break;
 
             case 'N':
             case 'n':
                 // Loop de movimentação
-                for (int i = 0; i < jogada; i++) {
-                    printf("%dº movimento da peça Rainha para a Diagonal Esquerda Frontal...\n", jogada);
+                for (int i = 1; i <= jogada; i++) {
+                    printf("%d movimento da peça Rainha para a Diagonal Esquerda Frontal...\n", i);
                 }
                 break;
 
             case 'T':
             case 't':
                 // Loop de movimentação
-                for (int i = 0; i < jogada; i++) {
-                    printf("%dº movimento da peça Rainha para a Traseira...\n", jogada);
+                for (int i = 1; i <= jogada; i++) {
+                    printf("%d movimento da peça Rainha para a Traseira...\n", i);
                 }
             break;
 
             case 'F':
             case 'f':
                 // Loop de movimentação
-                for (int i = 0; i < jogada; i++) {
-                    printf("%dº movimento da peça Rainha para a Frente\n", jogada);
+                for (int i = 1; i <= jogada; i++) {
+                    printf("%d movimento da peça Rainha para a Frente\n", i);
                 }
             break;
             default:
