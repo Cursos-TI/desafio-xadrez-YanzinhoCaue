@@ -33,6 +33,7 @@ int main() {
         printf("1. Bispo...\n");
         printf("2. Torre...\n");
         printf("3. Rainha...\n");
+        printf("4. Cavalo...\n");
         scanf("%d", &escolha);
 
         switch (escolha)
@@ -266,6 +267,140 @@ int main() {
             break;
         }
         break;
+        case 4:
+            printf("Você escolheu o Cavalo...\n");
+
+            // Escolha da direção
+            printf("Digite a direção para a qual a peça ira se mover: \n");
+            printf("D. Direita, Direita, Cima...\n");
+            printf("B. Direita, Direita, Bixo...\n");
+            printf("C. Esquerda, Esquerda, Cima...\n");
+            printf("E. Esquerda, Esquerda, Bixo...\n");
+            printf("F. Frente, Frente, Direita...\n");
+            printf("G. Frente, Frente, Esquerda...\n");
+            printf("S. Tras, Tras, Direita...\n");
+            printf("T. Tras, Tras, Esquerda...\n");
+            scanf(" %c", &direcao);
+
+            switch (direcao)
+            {
+            case 'D':
+            case 'd':
+                // Loop de movimentação aninhado
+                for (int i = 1; i < 2; i++) {
+                    printf("Direita...\n");
+
+                    if(i == 1) {
+                        for (int j = 0; j < i; j++) {
+                            printf("Cima...\n");
+                        }
+                    }
+                }
+                break;
+
+            case 'B':
+            case 'b':
+                // Loop de movimentação aninhado
+                for (int i = 1; i < 2; i++) {
+                    printf("Direita...\n");
+
+                    if(i == 1) {
+                        for (int j = 0; j < i; j++) {
+                            printf("Baixo...\n");
+                        }
+                    }
+                }
+                break;
+
+            case 'C':
+            case 'c':
+                // Loop de movimentação aninhado
+                for (int i = 1; i < 2; i++) {
+                    printf("Esquerda...\n");
+
+                    if(i == 1) {
+                        for (int j = 0; j < i; j++) {
+                            printf("Cima...\n");
+                        }
+                    }
+                }
+                break;
+
+            case 'E':
+            case 'e':
+                // Loop de movimentação aninhado
+                for (int i = 1; i < 2; i++) {
+                    printf("Esquerda...\n");
+
+                    if(i == 1) {
+                        for (int j = 0; j < i; j++) {
+                            printf("Baixo...\n");
+                        }
+                    }
+                }
+                break;
+
+            case 'F':
+            case 'f':
+                // Loop de movimentação aninhado
+                for (int i = 1; i < 2; i++) {
+                    printf("Frente...\n");
+
+                    if(i == 1) {
+                        for (int j = 0; j < i; j++) {
+                            printf("Direita...\n");
+                        }
+                    }
+                }
+                break;
+
+            case 'G':
+            case 'g':
+                // Loop de movimentação aninhado
+                for (int i = 1; i < 2; i++) {
+                    printf("Frente...\n");
+
+                    if(i == 1) {
+                        for (int j = 0; j < i; j++) {
+                            printf("Esquerda...\n");
+                        }
+                    }
+                }
+                break;
+
+            case 'S':
+            case 's':
+                // Loop de movimentação aninhado
+                for (int i = 1; i < 2; i++) {
+                    printf("Tras...\n");
+
+                    if(i == 1) {
+                        for (int j = 0; j < i; j++) {
+                            printf("Direita...\n");
+                        }
+                    }
+                }
+                break;
+
+            case 'T':
+            case 't':
+                // Loop de movimentação aninhado
+                for (int i = 1; i < 2; i++) {
+                    printf("Tras...\n");
+
+                    if(i == 1) {
+                        for (int j = 0; j < i; j++) {
+                            printf("Esquerda...\n");
+                        }
+                    }
+                }
+                break;
+
+            default:
+                printf("Opção inválida...\n");
+                break;
+            }
+            break;
 
     case 2:
         // Regras do Xadrez
